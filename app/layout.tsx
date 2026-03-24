@@ -10,7 +10,6 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -18,14 +17,18 @@ export const metadata: Metadata = {
   description: 'هل تبحث عن رقم ونش عمان؟ ونش المعلم يوفر خدمة ونش سيارات عمان على مدار 24 ساعة. أسرع ونش في عمان الأردن لنقل السيارات والبضائع والمعدات الثقيلة بأسعار منافسة.',
   keywords: 'ونش عمان, رقم ونش في عمان, ونش عمان 24 ساعة, ونش سيارات عمان, ونش في عمان, رقم ونش عمان, ونش عمان الاردن, ونش البيادر عمان, ونش داخل عمان, ونش عمان القويسمة, ونش نقل سيارات عمان, ونش كرين عمان',
   
-  // أضف هذا الجزء الخاص بالأيقونة
+  // كود التحقق الخاص بجوجل سيبدأ بالعمل الآن
+  verification: {
+    google: 'U9ecnwvRkbCB1jcoXjn0x9a9qYbser-DEeF2vAKL_8U',
+  },
+
   icons: {
-    icon: '/favicon.ico', // أو '/favicon.png' حسب امتداد صورتك
-    apple: '/favicon.png', // اختيارياً لأجهزة آيفون
+    icon: '/favicon.ico',
+    apple: '/favicon.png',
   },
 
   alternates: {
-    canonical: 'https://winchalmualem.com',
+    canonical: 'https://www.winchalmualem.com',
   },
 };
 

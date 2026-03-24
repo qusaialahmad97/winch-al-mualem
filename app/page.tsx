@@ -161,10 +161,41 @@ export default function Home() {
         </p>
       </footer>
 
-      {/* FLOATING WHATSAPP */}
-      <a href={`https://wa.me/${whatsapp}`} className="fixed bottom-10 left-10 z-[70] bg-[#25D366] text-white py-6 px-10 rounded-full shadow-[0_20px_60px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all flex items-center gap-5 font-black text-2xl border-4 border-white/20 backdrop-blur-sm">
-         أرسل موقعك (GPS) 📍
-      </a>
+{/* FLOATING CONTACT BAR (Bottom Center) */}
+      <div className="fixed bottom-6 inset-x-0 z-[100] flex justify-center items-center gap-4 px-6 pointer-events-none">
+        <div className="flex gap-4 bg-white/20 backdrop-blur-xl p-3 rounded-[2.5rem] border border-white/30 shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto">
+          
+          {/* WhatsApp Button */}
+          <a 
+            href={`https://wa.me/${whatsapp}`} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-90 transition-all border-2 border-white/50"
+            title="واتساب"
+          >
+            <span className="text-2xl">💬</span>
+          </a>
+
+          {/* Phone 1 Button */}
+          <a 
+            href={`tel:${phone1}`} 
+            className="w-14 h-14 bg-slate-900 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-90 transition-all border-2 border-white/50"
+            title="اتصال 1"
+          >
+            <span className="text-2xl">📞</span>
+          </a>
+
+          {/* Phone 2 Button */}
+          <a 
+            href={`tel:${phone2}`} 
+            className="w-14 h-14 bg-yellow-500 text-slate-950 rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-90 transition-all border-2 border-white/50"
+            title="اتصال 2"
+          >
+            <span className="text-2xl">☎️</span>
+          </a>
+
+        </div>
+      </div>
     </main>
   );
 }
